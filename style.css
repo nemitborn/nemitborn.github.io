@@ -40,8 +40,6 @@ body {
   }
 }
 
-/* ---------- Hero ---------- */
-
 .hero {
   margin-bottom: 4.5rem;
 }
@@ -68,8 +66,6 @@ body {
   color: var(--text-muted);
   margin: 0;
 }
-
-/* ---------- Tabs ---------- */
 
 .board {
   border-top: 1px solid var(--line);
@@ -123,8 +119,6 @@ body {
   outline: 2px solid var(--accent-bright);
   outline-offset: 3px;
 }
-
-/* ---------- Panels ---------- */
 
 .panel {
   border-top: 1px solid var(--line);
@@ -180,10 +174,56 @@ body {
   font-style: italic;
 }
 
-/* ---------- Reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   .tab::after {
     transition: none;
   }
+}
+
+.about {
+  border-top: 1px solid var(--line);
+  padding-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.contact {
+  border-top: 1px solid var(--line);
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+}
+ 
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+ 
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 0.95rem;
+}
+ 
+.contact-label {
+  color: var(--text-muted);
+  width: 5.5rem;
+  flex-shrink: 0;
+}
+ 
+.contact-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+ 
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--accent-bright);
+  border-color: var(--accent-bright);
 }
