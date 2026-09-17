@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <main class="wrap">
+
+    <section class="title">
+      <h1 class="name">Im Nemit</h1>
+      <p class="intro">
+        Welcome to my portfiolio page, this page contains an introduction about me,
+        my projects, my expereinces and future projects...
+      </p>
+    </section>
+
+    <section class="board" aria-label="Projects and experience">
+
+      <div class="tabs" role="tablist" aria-label="Site sections">
+        <button
+          class="tab is-active"
+          id="tab-projects"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-projects"
+        >
+          Projects
+        </button>
+        <button
+          class="tab"
+          id="tab-experience"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-experience"
+          tabindex="-1"
+        >
+          Work &amp; Events
+        </button>
+      </div>
+
+      <div
+        class="panel is-active"
+        id="panel-projects"
+        role="tabpanel"
+        aria-labelledby="tab-projects"
+      >
+        <ul class="entry-list">
+          <li class="entry">
+            <div class="entry-head">
+              <span class="entry-title">hahaha i got nothing yet but soon</span>
+              <span class="entry-meta">2026</span>
+            </div>
+            <p class="entry-desc">
+              i guess this website is one
+            </p>
+          </li>
+          <li class="entry entry-empty">
+            <p>More projects coming soon.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="panel"
+        id="panel-experience"
+        role="tabpanel"
+        aria-labelledby="tab-experience"
+        hidden
+      >
+        <ul class="entry-list">
+          <li class="entry">
+            <div class="entry-head">
+              <span class="entry-title">also no events but i got stuff planned</span>
+              <span class="entry-meta">2026</span>
+            </div>
+            <p class="entry-desc">
+              man im hungry
+            </p>
+          </li>
+          <li class="entry entry-empty">
+            <p>More to come.</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
