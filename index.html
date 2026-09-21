@@ -1,121 +1,126 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <main class="wrap">
-
-    <section class="title">
-      <h1 class="name">Im Nemit</h1>
-      <p class="intro">
-        Welcome to my portfiolio page, this page contains an introduction about me,
-        my projects, my expereinces and future projects...
-      </p>
-    </section>
-
-        <section class="about" aria-label="About me">
-      <h2 class="section-label">About</h2>
-      <p class="about-text">
-        man this my bio page tf goin on here
-      </p>
-    </section>
-
-    <section class="board" aria-label="Projects and experience">
-
-      <div class="tabs" role="tablist" aria-label="Site sections">
-        <button
-          class="tab is-active"
-          id="tab-projects"
-          role="tab"
-          aria-selected="true"
-          aria-controls="panel-projects"
-        >
-          Projects
-        </button>
-        <button
-          class="tab"
-          id="tab-experience"
-          role="tab"
-          aria-selected="false"
-          aria-controls="panel-experience"
-          tabindex="-1"
-        >
-          Work &amp; Events
-        </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nemit's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+ 
+      <div class="titlecard">
+        <h1>Nemit — aspiring software dev</h1>
+        <p class="intro">
+          Self-learning a lot of things | Proficient in Python | Adaptable | Detail Oriented
+          <br />
+          (Scroll down to see my work!)
+        </p>
       </div>
+ 
+      <section class="about" aria-label="About me">
+        <h2 class="section-label">About me</h2>
+        <dl class="about-details">
+          <div class="detail-row">
+            <dt>Name</dt>
+            <dd>Mahir (in person), Nemit and Yero (online)</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Age</dt>
+            <dd>17</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Studying</dt>
+            <dd>T Level Digital Software Development</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Interests</dt>
+            <dd>
+              <ul class="detail-list">
+                <li>Cyber Security</li>
+                <li>Networking and meeting new people</li>
+                <li>Music (guitar)</li>
+                <li>Python</li>
+                <li>Tech repairs</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="detail-row">
+            <dt>Current status</dt>
+            <dd>
+              <ul class="detail-list">
+                <li>Building this portfolio website</li>
+                <li>Making a few small projects on my GitHub</li>
+                <li>Attending tech events to post on LinkedIn</li>
+                <li>Looking for a part-time job (Saturdays, Sundays and Mondays)</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </section>
+ 
+      <section class="board" aria-label="Projects and experience">
+        <div class="tabs" role="tablist" aria-label="Site sections">
+          <button
+            class="tab is-active"
+            id="tab-projects"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-projects"
+          >
+            Projects
+          </button>
+          <button
+            class="tab"
+            id="tab-experience"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-experience"
+          >
+            Work | Events
+          </button>
+        </div>
+ 
+        <div
+          class="panel is-active"
+          id="panel-projects"
+          role="tabpanel"
+          aria-labelledby="tab-projects"
+        >
 
-      <div
-        class="panel is-active"
-        id="panel-projects"
-        role="tabpanel"
-        aria-labelledby="tab-projects"
-      >
-        <ul class="entry-list">
-          <li class="entry">
-            <div class="entry-head">
-              <span class="entry-title">hahaha i got nothing yet but soon</span>
-              <span class="entry-meta">2026</span>
-            </div>
-            <p class="entry-desc">
-              i guess this website is one
-            </p>
+          <ul class="entry-list" id="projects-list"></ul>
+        </div>
+ 
+        <div
+          class="panel"
+          id="panel-experience"
+          role="tabpanel"
+          aria-labelledby="tab-experience"
+          hidden
+        >
+
+          <ul class="entry-list" id="experience-list"></ul>
+        </div>
+      </section>
+ 
+      <section class="contact" aria-label="Contact details">
+        <h2 class="section-label">Contact me</h2>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-link" href="mailto:mahirmuentes@gmail.com">mahirmuentes@gmail.com</a>
           </li>
-          <li class="entry entry-empty">
-            <p>More projects coming soon.</p>
+          <li class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <a class="contact-link" href="https://github.com/nemitborn" target="_blank" rel="noopener">github.com/nemitborn</a>
+          </li>
+          <li class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-link" href="https://www.linkedin.com/in/mahir-muentes-7684b8379/" target="_blank" rel="noopener">linkedin.com/in/mahir-muentes</a>
           </li>
         </ul>
-      </div>
-
-      <div
-        class="panel"
-        id="panel-experience"
-        role="tabpanel"
-        aria-labelledby="tab-experience"
-        hidden
-      >
-        <ul class="entry-list">
-          <li class="entry">
-            <div class="entry-head">
-              <span class="entry-title">also no events but i got stuff planned</span>
-              <span class="entry-meta">2026</span>
-            </div>
-            <p class="entry-desc">
-              man im hungry
-            </p>
-          </li>
-          <li class="entry entry-empty">
-            <p>More to come.</p>
-          </li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section class="contact" aria-label="Contact details">
-      <h2 class="section-label">Contact</h2>
-      <ul class="contact-list">
-        <li class="contact-item">
-          <span class="contact-label">Email</span>
-          <a class="contact-link">mahirmuentes@gmail.com</a>
-        </li>
-        <li class="contact-item">
-          <span class="contact-label">GitHub</span>
-          <a class="contact-link" href="https://github.com/nemitborn" target="_blank" rel="noopener">https://github.com/nemitborn</a>
-        </li>
-        <li class="contact-item">
-          <span class="contact-label">LinkedIn</span>
-          <a class="contact-link" href="https://www.linkedin.com/in/mahir-muentes-7684b8379/" target="_blank" rel="noopener">linkedin.com/in/mahir-muentes</a>
-        </li>
-      </ul>
-    </section>    
-  </main>
-
-  <script src="script.js"></script>
-</body>
+      </section>
+ 
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
-
