@@ -18,4 +18,57 @@ function activateTab(tab) {
 tabs.forEach((tab) => {
   tab.addEventListener('click', () => activateTab(tab));
 });
+
+
+
+
+
+
+
+
+
+
+const projects = [
+  {
+    title: 'Placeholder',
+    year: '1989',
+    desc: 'a song by nxp probably.',
+  },
+];
  
+const experience = [
+  {
+    title: 'work',
+    year: '2026',
+    desc: 'man im hungry',
+  },
+];
+ 
+function renderEntries(list, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+ 
+  if (list.length === 0) {
+    const empty = document.createElement('li');
+    empty.className = 'entry entry-empty';
+    empty.innerHTML = '<p>Nothing here yet.</p>';
+    container.appendChild(empty);
+    return;
+  }
+ 
+  list.forEach((item) => {
+    const li = document.createElement('li');
+    li.className = 'entry';
+    li.innerHTML = `
+      <div class="entry-head">
+        <span class="entry-title">${item.title}</span>
+        <span class="entry-meta">${item.year}</span>
+      </div>
+      <p class="entry-desc">${item.desc}</p>
+    `;
+    container.appendChild(li);
+  });
+}
+ 
+renderEntries(projects, 'projects-list');
+renderEntries(experience, 'experience-list');
